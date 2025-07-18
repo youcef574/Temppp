@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montre Élégante - YouZinElegancia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="produits.html" class="nav-logo">YouZinElegancia</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="main.png" alt="Montre Élégante" id="mainImage">
+                    </div>
+                    <div class="thumbnail-gallery">
+                        <img src="main.png" alt="Vue principale" class="thumbnail active" onclick="changeImage('main.png')">
+                        <img src="1.png" alt="Vue 1" class="thumbnail" onclick="changeImage('1.png')">
+                        <img src="2.png" alt="Vue 2" class="thumbnail" onclick="changeImage('2.png')">
+                        <img src="3.png" alt="Vue 3" class="thumbnail" onclick="changeImage('3.png')">
+                    </div>
+                </div>
+                
+                <div class="product-info">
+                    <h1 class="product-title">Montre Élégante</h1>
+                    <div class="product-price">
+                        <span class="current-price">149,99 €</span>
+                        <span class="original-price">199,99 €</span>
+                    </div>
+                    <p class="product-description-short">
+                        Une montre sophistiquée qui allie élégance intemporelle et précision suisse. 
+                        L'accessoire parfait pour sublimer votre style au quotidien.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Description -->
+    <section class="detailed-description">
+        <div class="container">
+            <h2>Description Détaillée</h2>
+            <div class="description-content">
+                <div class="description-text">
+                    <h3>Excellence et Raffinement</h3>
+                    <p>Cette montre élégante incarne le parfait équilibre entre tradition horlogère et design contemporain. Conçue pour les connaisseurs qui apprécient les détails fins et la qualité exceptionnelle.</p>
+                    
+                    <h4>Caractéristiques Premium :</h4>
+                    <ul>
+                        <li><strong>Mouvement de précision :</strong> Mécanisme suisse garantissant une précision parfaite</li>
+                        <li><strong>Boîtier en acier inoxydable :</strong> Résistant aux rayures et à la corrosion</li>
+                        <li><strong>Cadran sophistiqué :</strong> Finition sunray avec index appliqués</li>
+                        <li><strong>Bracelet en cuir véritable :</strong> Confort optimal et durabilité exceptionnelle</li>
+                        <li><strong>Étanchéité 50m :</strong> Résistant aux éclaboussures et à la pluie</li>
+                        <li><strong>Verre saphir :</strong> Protection maximale contre les rayures</li>
+                    </ul>
+
+                    <h4>Style Intemporel :</h4>
+                    <p>Son design épuré et ses lignes raffinées s'adaptent parfaitement à toutes les occasions, du bureau aux événements les plus prestigieux. Cette montre est bien plus qu'un simple accessoire, c'est un symbole de réussite et de bon goût.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Garantie</h3>
+                    <p>Garantie constructeur de 2 ans pour votre tranquillité d'esprit</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <h3>Retour Facile</h3>
+                    <p>Retour gratuit sous 30 jours si vous n'êtes pas satisfait</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Paiement à la Livraison</h3>
+                    <p>Payez uniquement à la réception de votre commande</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Vérification avant Paiement</h3>
+                    <p>Inspectez votre produit avant de finaliser le paiement</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shipping-fast"></i>
+                    </div>
+                    <h3>Livraison Rapide</h3>
+                    <p>Livraison express en 24-48h partout en France</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Service Client Dédié</h3>
+                    <p>Support client disponible 7j/7 pour vous accompagner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order-form-section">
+        <div class="container">
+            <h2>Commandez Maintenant</h2>
+            <form id="orderForm" class="order-form">
+                <div class="form-group">
+                    <label for="variation">Couleur du Bracelet</label>
+                    <select id="variation" name="variation" required>
+                        <option value="">Choisissez une couleur</option>
+                        <option value="noir">Noir Classique</option>
+                        <option value="marron">Marron Cognac</option>
+                        <option value="bleu">Bleu Marine</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="quantity">Quantité</label>
+                    <select id="quantity" name="quantity" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName">Nom Complet</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Numéro de Téléphone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="wilaya">Wilaya</label>
+                        <select id="wilaya" name="wilaya" required>
+                            <option value="">Sélectionnez votre wilaya</option>
+                            <option value="alger">Alger</option>
+                            <option value="oran">Oran</option>
+                            <option value="constantine">Constantine</option>
+                            <option value="annaba">Annaba</option>
+                            <option value="blida">Blida</option>
+                            <option value="batna">Batna</option>
+                            <option value="djelfa">Djelfa</option>
+                            <option value="setif">Sétif</option>
+                            <option value="sidi-bel-abbes">Sidi Bel Abbès</option>
+                            <option value="biskra">Biskra</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="commune">Commune</label>
+                        <input type="text" id="commune" name="commune" placeholder="Votre commune" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="shippingCost">Prix de Livraison</label>
+                    <input type="number" id="shippingCost" name="shippingCost" value="5.99" step="0.01" min="0">
+                </div>
+
+                <div class="security-notice">
+                    <i class="fas fa-lock"></i>
+                    <span>Vos informations sont 100% protégées et ne seront jamais partagées.</span>
+                </div>
+
+                <div class="form-buy-button">
+                    <button type="button" class="form-buy-btn" onclick="showOrderPopup()">
+                        <i class="fas fa-shopping-cart"></i>
+                        اشترِ الآن
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>Questions Fréquentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>La montre est-elle étanche ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, cette montre est étanche jusqu'à 50 mètres, ce qui la rend résistante aux éclaboussures et à la pluie.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Quelle est la durée de la garantie ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous offrons une garantie constructeur de 2 ans couvrant tous les défauts de fabrication.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Puis-je retourner la montre si elle ne me plaît pas ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument ! Vous disposez de 30 jours pour retourner votre montre gratuitement si vous n'êtes pas entièrement satisfait.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Combien de temps prend la livraison ?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous livrons en 24-48h partout en France grâce à notre service de livraison express.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>YouZinElegancia</h3>
+                    <p>Votre destination pour l'élégance et le raffinement.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 YouZinElegancia. Tous droits réservés.</p>
+                <button id="backToTop" class="back-to-top">
+                    <i class="fas fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Buy Button (Mobile) -->
+    <div class="fixed-buy-button">
+        <button id="buyNowBtn" class="buy-now-btn">
+            <i class="fas fa-shopping-cart"></i>
+            Acheter Maintenant
+        </button>
+    </div>
+
+    <!-- Order Confirmation Popup -->
+    <div id="orderPopup" class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>Confirmation de Commande</h3>
+                <button class="close-popup" onclick="closePopup()">&times;</button>
+            </div>
+            
+            <div class="popup-body">
+                <div class="order-summary">
+                    <h4>Résumé de votre commande :</h4>
+                    <div class="summary-item">
+                        <span>Produit :</span>
+                        <span>Montre Élégante</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Couleur :</span>
+                        <span id="summaryVariation">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Quantité :</span>
+                        <span id="summaryQuantity">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Nom :</span>
+                        <span id="summaryName">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Téléphone :</span>
+                        <span id="summaryPhone">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Wilaya :</span>
+                        <span id="summaryWilaya">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Commune :</span>
+                        <span id="summaryCommune">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Prix produit :</span>
+                        <span id="summaryProductPrice">149,99 €</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Frais de livraison :</span>
+                        <span id="summaryShipping">5,99 €</span>
+                    </div>
+                    <div class="summary-item total">
+                        <span>Total :</span>
+                        <span id="summaryTotal">155,98 €</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="popup-footer">
+                <button id="confirmOrderBtn" class="confirm-btn">Confirmer la Commande</button>
+                <button class="cancel-btn" onclick="closePopup()">Annuler</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Message -->
+    <div id="successMessage" class="success-message">
+        <div class="success-content">
+            <i class="fas fa-check-circle"></i>
+            <h3>Commande Confirmée !</h3>
+            <p>Merci pour votre confiance ! Votre commande a été enregistrée avec succès. Nous vous contacterons bientôt pour confirmer les détails de livraison.</p>
+            <button onclick="closeSuccess()" class="success-btn">Parfait !</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
