@@ -180,11 +180,21 @@ function updateShippingCost() {
 buyNowBtn.addEventListener('click', function() {
     // Scroll to order form section
     const orderFormSection = document.querySelector('.order-form-section');
-    orderFormSection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-    });
+    if (orderFormSection) {
+        orderFormSection.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }
 });
+
+// Additional buy button event listener
+const additionalBuyBtn = document.getElementById('additionalBuyBtn');
+if (additionalBuyBtn) {
+    additionalBuyBtn.addEventListener('click', function() {
+        showOrderPopup();
+    });
+}
 confirmOrderBtn.addEventListener('click', showSuccessMessage);
 backToTopBtn.addEventListener('click', scrollToTop);
 
