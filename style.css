@@ -494,7 +494,7 @@ body {
     gap: 0.5rem;
     box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
     transition: all 0.3s ease;
-    animation: pulse 2s infinite;
+    animation: pulseGlow 2s infinite;
 }
 
 .buy-now-btn:hover {
@@ -503,15 +503,18 @@ body {
     animation: none;
 }
 
-@keyframes pulse {
+@keyframes pulseGlow {
     0% {
         transform: scale(1);
+        box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
     }
     50% {
         transform: scale(1.05);
+        box-shadow: 0 15px 40px rgba(99, 102, 241, 0.7);
     }
     100% {
         transform: scale(1);
+        box-shadow: 0 10px 30px rgba(99, 102, 241, 0.4);
     }
 }
 
@@ -820,4 +823,4 @@ body {
     .popup-footer {
         padding: 1.5rem;
     }
-  }
+    }
